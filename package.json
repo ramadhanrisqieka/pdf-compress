@@ -1,0 +1,29 @@
+{
+  "name": "pdf-compress",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --max-old-space-size=8192 server/index.js",
+    "build": "tsc --noEmit && vite build",
+    "start": "node --max-old-space-size=8192 server/index.js --prod"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "multer": "^2.0.2",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}
